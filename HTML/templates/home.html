@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/HTML/static/css/base.css">
+    <title>Carfix</title>
+   
+</head>
+
+<body>
+    
+    <div class="navbar">
+<img class="Logo_navbar" src="/static/imagens/Logo.png" alt="Logo"> 
+    <a href="/sair" class="btn_navbar">Sair</a>
+
+
+<div class="container">
+  <!-- conteúdo da página -->
+</div>
+    </div>
+
+    
+
+<aside class="perfil">
+
+<br><br><br>
+<img src="{{img_perfil}}" alt="foto_de_perfil" title= "Alterar foto" width="200" height="120"  id="foto_de_perfil">
+<br>
+
+<h43class="nome" > {{nome}} </h3>
+<div class="menu_lateral_esquerdo">
+
+    <br>
+    <div class="menu_lateral_equerdo_1">
+<h2 class="menu_perfil" id="button_Fotos">Fotos</h2>
+<h2 class="menu_perfil" id="button_Endereco">Endereço</h2>
+<h2 class="menu_perfil" id="button_Servicos">Servicos</h2>
+<h2 class="menu_perfil" id="button_Mensagens">Mensagens</h2>
+<h2 class="menu_perfil" id="button_Configuracao">Configuracao</h2>
+    </div>
+
+    <div class="menu_lateral_esquerdo 2">
+<span class="custon_icon_button_voltar_config" id="button_voltar">Voltar</span>
+    
+<h2 class="menu_perfil" id="escolha_formulario_senha">Mudar Senha</h2>
+<h2 class="menu_perfil" id="button_mudar_tema">Mudar Foto de Capa</h2>
+<h2 class="menu_perfil" id="button_apagar_conta">Apagar Conta</h2>
+
+    </div>
+</div>
+
+
+<div id="rodape">
+    <br><br><br>
+    By Team CarFix 2025 &copy; <br>
+    <a class="politicas">Politicas de Privacidade</a> <br>
+    <a class="politicas">Termos e condicoes</a> 
+    <a class="politicas">Email para contato: carfixofc@gmail.com</a>
+</div>
+
+</aside>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<div class ="conteudo" ></div>
+
+<aside class="lateral_esquerda">
+
+</aside>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
